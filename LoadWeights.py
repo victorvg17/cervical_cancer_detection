@@ -1,6 +1,7 @@
 from fastai import *
 from fastai.vision import *
 from fastai.callbacks import *
+from fastai.vision import ImageDataBunch
 #import Path
 import torch
 import torchvision
@@ -14,8 +15,8 @@ class LoadWeights:
 		self.location = location
 
 	def load_w(self,location):
-		self.location = location;
-		res = models.resnet50
+		self.location = location
+		# res = models.resnet50
 		#hyperparameters
 		batch_size = 10
 		epochs = 50
